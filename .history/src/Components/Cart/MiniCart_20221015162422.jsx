@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { cartSelector } from "../../store/selector";
 import cartSlice, {
   calculateTotal,
@@ -22,7 +21,7 @@ const MiniCart = () => {
 
   return (
     <div className="cart--mini bg-white text-black w-[320px] p-3 max-h-[460px] rounded-md">
-      {cart?.length === 0 ? (
+      {cart?.length == 0 ? (
         <div className="text-base font-base text-center">
           Chưa có sản phẩm trong giỏ hàng.
         </div>
@@ -65,18 +64,12 @@ const MiniCart = () => {
             <p>{formatCurrency(total)}</p>
           </div>
           <div className="w-full flex justify-between gap-2">
-            <Link
-              to="/cart"
-              className="flex-1 text-center py-2 bg-[#B61C0B] rounded-3xl  text-sm text-white font-semibold"
-            >
+            <button className="flex-1 text-center py-2 bg-[#B61C0B] rounded-3xl  text-sm text-white font-semibold">
               Xem giỏ hàng
-            </Link>
-            <Link
-              to="/cart"
-              className="flex-1 text-center py-2 bg-[#B61C0B] rounded-3xl  text-sm text-white font-semibold"
-            >
+            </button>
+            <button className="flex-1 text-center py-2 bg-[#B61C0B] rounded-3xl  text-sm text-white font-semibold">
               Thanh toán
-            </Link>
+            </button>
           </div>
         </div>
       )}

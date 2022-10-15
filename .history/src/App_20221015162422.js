@@ -13,7 +13,6 @@ import IntroducePage from "./Pages/IntroducePage";
 import LoginPage from "./Pages/LoginPage";
 import MapPage from "./Pages/MapPage";
 import MenuPage from "./Pages/MenuPage";
-import CartPage from "./Pages/CartPage";
 import NewsDetail from "./Pages/NewsDetail";
 import ProductDetail from "./Pages/ProductDetail";
 import RegisterPage from "./Pages/RegisterPage";
@@ -53,7 +52,6 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </ScrollToTop>
 

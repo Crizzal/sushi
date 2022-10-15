@@ -53,7 +53,6 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </ScrollToTop>
 

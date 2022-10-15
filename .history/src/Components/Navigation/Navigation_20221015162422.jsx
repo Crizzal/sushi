@@ -119,15 +119,15 @@ const Navigation = ({ isDropDown, setIsModal }) => {
               </Link>
             </li>
             <li className="relative group">
-              <Link
-                to="/cart"
+              <a
+                href=""
                 className="flex flex-col items-center md:px-[10px] mx-[10px]"
               >
                 <img src={cartIcon} alt="" />
                 <p className="text-white text-sm font-bold hidden md:block">
                   Giỏ hàng
                 </p>
-              </Link>
+              </a>
               <div className="hidden group-hover:block gap-3 absolute top-[55px] right-[15px] z-[99]">
                 <MiniCart />
               </div>
