@@ -52,8 +52,8 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/map" element={<MapPage />} />
-          <Route path="/cart" element={<CartPage />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </ScrollToTop>
 

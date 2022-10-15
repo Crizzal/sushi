@@ -51,7 +51,7 @@ function App() {
           <Route path="/news" element={<NewsDetail />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/map" element={<MapPage />} />
+          <Route path="/map" element={<CartPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
